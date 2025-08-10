@@ -1,0 +1,18 @@
+@startuml CasosDeUso
+skinparam actorStyle awesome
+
+:Usuario: as usuario 
+(Registro) as re
+(Pagina inicio) as inicio 
+(Contraseña o usuario no valido) as Cu
+(Inicio de Sesion ) as is 
+
+
+re --> inicio : Digitar contraseña y usuario  correctamente
+usuario --> re
+re --> Cu : Contraseña o usuario no valido 
+Cu --> re
+re --> is
+
+
+@enduml

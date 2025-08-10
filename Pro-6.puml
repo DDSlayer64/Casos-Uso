@@ -1,0 +1,25 @@
+@startuml CasosDeUso
+skinparam actorStyle awesome
+
+:Usuario: as usuario 
+(Productos) as pro
+(Eliminar Producto) as ep
+(Eliminar) as eli
+(Cerrar) as cerr
+(Si) as si
+(No) as no
+
+
+pro --> ep
+eli --> si  
+si --> pro : Mostrar El producto se elimino correctamente
+ep --> eli
+eli --> no 
+no  --> pro
+ep --> cerr
+cerr --> pro
+usuario --> pro 
+
+
+
+@enduml

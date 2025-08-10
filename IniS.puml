@@ -5,12 +5,14 @@ skinparam actorStyle awesome
 (Inicio de sesion) as inicioS
 (Pagina inicio) as inicio 
 (Contraseña o usuario incorrecto) as Cu
+(Registro) as re
 
 
 inicioS --> inicio : Digitar contraseña y usuario  correctamente
 usuario --> inicioS
 inicioS --> Cu : Contraseña o usuario incorrecto 
 Cu --> inicioS
+inicioS --> re
 
 
 @enduml

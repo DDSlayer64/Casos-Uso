@@ -1,0 +1,22 @@
+@startuml CasosDeUso
+skinparam actorStyle awesome
+
+:Usuario: as usuario 
+(Productos) as pro
+(Editar Producto) as ep
+(Confirmar) as con
+(Cerrar) as cerr
+(Espacio incompleto) as ei
+
+pro --> ep
+ep --> ei :  Mostrar Completar espacio vacio
+ei  --> ep
+ep --> con : Mostrar El producto se edito correctamente
+con --> ep
+ep --> cerr
+cerr --> pro
+usuario --> pro
+
+
+
+@enduml
