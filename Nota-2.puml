@@ -1,0 +1,20 @@
+@startuml CasosDeUso
+skinparam actorStyle awesome
+
+:Usuario: as usuario 
+(Notas) as nota
+(Agregar Nota) as an
+(Confirmar) as con
+(Cerrar) as cerr
+(Espacio incompleto) as ei
+
+nota --> an
+an --> con : Mostrar La nota se creo correctamente
+con --> an
+an --> cerr
+cerr --> nota
+usuario --> nota
+
+
+
+@enduml
