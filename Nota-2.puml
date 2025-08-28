@@ -2,18 +2,18 @@
 skinparam actorStyle awesome
 
 :Usuario: as usuario 
-(Notas) as nota
+(Notas) as notas
 (Agregar Nota) as an
 (Confirmar) as con
 (Cerrar) as cerr
 (Espacio incompleto) as ei
 
-nota --> an
-an --> con : Mostrar La nota se creo correctamente
-con --> an
+notas--> an :Click en Agregar Nota
+an --> con : Mostrar La nota se creo correctamente 
+con --> notas :Click en confirmar
 an --> cerr
-cerr --> nota
-usuario --> nota
+cerr --> notas :Click en Cerrar
+usuario --> notas
 
 
 

@@ -3,16 +3,16 @@ skinparam actorStyle awesome
 
 :Usuario: as usuario 
 (Inicio de sesion) as inicioS
-(Pagina inicio) as inicio 
+(Pagina principal) as principal
 (Contraseña o usuario incorrecto) as Cu
 (Registro) as re
 
 
-inicioS --> inicio : Digitar contraseña y usuario  correctamente
+inicioS --> principal : Digitar contraseña y usuario  correctamente
 usuario --> inicioS
 inicioS --> Cu : Contraseña o usuario incorrecto 
 Cu --> inicioS
-inicioS --> re
+inicioS --> re :Click en Registo
 
 
 @enduml

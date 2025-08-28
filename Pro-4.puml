@@ -8,13 +8,13 @@ skinparam actorStyle awesome
 (Cerrar) as cerr
 (Espacio incompleto) as ei
 
-pro --> ep
+pro --> ep :Click Editar Producto
 ep --> ei :  Mostrar Completar espacio vacio
 ei  --> ep
 ep --> con : Mostrar El producto se edito correctamente
-con --> ep
+con --> pro :Click Confirmar
 ep --> cerr
-cerr --> pro
+cerr --> pro :CLick Cerrar
 usuario --> pro
 
 

@@ -10,14 +10,14 @@ skinparam actorStyle awesome
 (No) as no
 
 
-pro --> ep
+pro --> ep :Click Eliminar Producto
 eli --> si  
-si --> pro : Mostrar El producto se elimino correctamente
+si --> pro : Click Si: Mostrar El producto se elimino correctamente 
 ep --> eli
 eli --> no 
-no  --> pro
+no  --> pro :Click No
 ep --> cerr
-cerr --> pro
+cerr --> pro :Click Cerrar 
 usuario --> pro 
 
 

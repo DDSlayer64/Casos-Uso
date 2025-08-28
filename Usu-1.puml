@@ -2,20 +2,22 @@
 skinparam actorStyle awesome
 
 :Usuario: as usuario 
-(Boton "Usuario") as usu
-(Perfil) as inicio 
+(Menu "Usuario") as usu
+(Perfil) as per 
 (Configuraciones) as conf
 (Cerrar Sesion ) as cs
 (Confirmar) as confirmar
 (Cancelar) as cancelar
+(InicioSesion) as Inicio
 
-usuario --> usu 
-usu --> inicio
-usu --> conf
-usu --> cs
-cs --> confirmar
-cs --> cancelar
-cancelar --> usu
+usuario --> usu :Click Boton Usuario
+usu --> per :Click Perfil 
+usu --> conf :Click Configuraciones
+usu --> cs :Click Cerrar Sesion 
+cs --> confirmar 
+cs --> cancelar 
+cancelar --> usu :Click Cancelar
+confirmar --> Inicio :Click Confirmar
 
 
 @enduml
