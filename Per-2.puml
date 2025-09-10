@@ -1,0 +1,20 @@
+@startuml CasosDeUso
+skinparam actorStyle awesome
+
+:Usuario: as usuario 
+(Perfil) as per
+(PerfilUsuario) as perU
+(Editar perfil) as Eper 
+(Cancelar) as Cancelar 
+(Confirmar) as Confirmar
+
+per --> perU :Hacer click perfil usuario
+per --> Eper :Hacer click en editar perfil
+Eper --> Confirmar
+Confirmar --> per :Hacer click en confirmar 
+Eper --> Cancelar 
+Cancelar --> per :Hacer click en cancelar
+
+
+
+@enduml
